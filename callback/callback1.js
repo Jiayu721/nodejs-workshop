@@ -22,20 +22,18 @@ function doWork(job, timer, cb) {
     } else {
       console.log('執行成功:', data);
     }
-  });
-
-  doWork('吃早餐', 5000, function (err, data) {
-    if (err) {
-      console.error('發生錯誤了', err);
-    } else {
-      console.log('執行成功:', data);
-    }
-  });
-
-  doWork('寫功課', 3000, function (err, data) {
-    if (err) {
-      console.error('發生錯誤了', err);
-    } else {
-      console.log('執行成功:', data);
-    }
+    doWork('吃早餐', 5000, function (err, data) {
+        if (err) {
+          console.error('發生錯誤了', err);
+        } else {
+          console.log('執行成功:', data);
+        }
+        doWork('寫功課', 3000, function (err, data) {
+            if (err) {
+              console.error('發生錯誤了', err);
+            } else {
+              console.log('執行成功:', data);
+            }
+        });
+    });
   });
