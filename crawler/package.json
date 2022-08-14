@@ -1,18 +1,17 @@
 {
   "name": "crawler",
   "version": "1.0.0",
-  "description": "I am a crawlegitr",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "crawler"
-  ],
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.27.2",
-    "moment": "^2.29.4"
+    "moment": "^2.29.4",
+    "mysql2": "^2.3.3"
   }
 }
